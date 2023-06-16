@@ -1,0 +1,41 @@
+{
+  "name": "vite-plugin-strip-block",
+  "version": "1.0.0",
+  "description": "vite build code block strip plugin",
+  "homepage": "https://github.com/gseok/vite-plugin-strip-block",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/gseok/vite-plugin-strip-block"
+  },
+  "keywords": [
+    "strip",
+    "vite",
+    "vite-plugin"
+  ],
+  "main": "./dist/index.js",
+  "module": "./dist/index.mjs",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "require": "./dist/index.js",
+      "import": "./dist/index.mjs"
+    }
+  },
+  "files": [
+    "dist"
+  ],
+  "engines": {
+    "node": ">=18.13.0"
+  },
+  "packageManager": "^pnpm@8.6.2",
+  "author": "gseok.seo@gmail.com",
+  "license": "MIT",
+  "scripts": {
+    "build": "tsup src/index.ts --dts --format cjs,esm"
+  },
+  "devDependencies": {
+    "tsup": "^6.7.0",
+    "typescript": "^5.1.3",
+    "vite": "^4.3.9"
+  }
+}
