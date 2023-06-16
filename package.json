@@ -18,7 +18,8 @@
   "exports": {
     ".": {
       "require": "./dist/index.js",
-      "import": "./dist/index.mjs"
+      "import": "./dist/index.mjs",
+      "types": "./dist/index.d.ts"
     }
   },
   "files": [
@@ -31,7 +32,7 @@
   "author": "gseok.seo@gmail.com",
   "license": "MIT",
   "scripts": {
-    "build": "tsup src/index.ts --dts --format cjs,esm"
+    "build": "tsup src/index.ts --dts --minify --format cjs,esm"
   },
   "devDependencies": {
     "tsup": "^6.7.0",
