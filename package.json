@@ -29,10 +29,11 @@
     "node": ">=18.13.0"
   },
   "packageManager": "^pnpm@8.6.2",
-  "author": "gseok.seo@gmail.com",
+  "author": "gseok.seo",
   "license": "MIT",
   "scripts": {
-    "build": "tsup src/index.ts --dts --minify --format cjs,esm"
+    "build": "tsup src/index.ts --dts --minify --format cjs,esm",
+    "deploy": "pnpm publish"
   },
   "devDependencies": {
     "tsup": "^6.7.0",
