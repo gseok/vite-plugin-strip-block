@@ -1,6 +1,6 @@
 {
   "name": "vite-plugin-strip-block",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "vite build code block strip plugin",
   "homepage": "https://github.com/gseok/vite-plugin-strip-block",
   "repository": {

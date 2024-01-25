@@ -15,6 +15,7 @@ const stripBlockPlugin = (options: StripBlockPluginOptions): Plugin => {
   // ref: https://github.com/jballant/webpack-strip-block
   return {
     name: 'vite-plugin-strip-block',
+    enforce: 'pre',
     transform(code, id) {
       // is not 'js, jsx, ts, tsx' file then bypass
       if (!/\.([jt]sx?)$/.test(id)) {
